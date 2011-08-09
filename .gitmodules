@@ -1,72 +1,96 @@
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+	ignore = dirty
 [submodule ".vim/bundle/dbext"]
 	path = .vim/bundle/dbext
 	url = https://github.com/vim-scripts/dbext.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/genutils"]
 	path = .vim/bundle/genutils
 	url = https://github.com/vim-scripts/genutils.git
+	ignore = dirty
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+	ignore = dirty
 [submodule ".vim/bundle/multvals"]
 	path = .vim/bundle/multvals
 	url = https://github.com/vim-scripts/multvals.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/rails"]
 	path = .vim/bundle/rails
 	url = https://github.com/vim-scripts/rails.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/SQLUtillities"]
 	path = .vim/bundle/SQLUtillities
 	url = https://github.com/vim-scripts/SQLUtilities.git
+	ignore = dirty
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
 	url = https://github.com/vim-scripts/surround.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/debugger"]
 	path = .vim/bundle/debugger
 	url = https://github.com/vim-scripts/debugger.py.git
+	ignore = dirty
 [submodule ".vim/bundle/snipMate"]
 	path = .vim/bundle/snipMate
 	url = https://github.com/msanders/snipmate.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/cucumber"]
 	path = .vim/bundle/cucumber
 	url = https://github.com/vim-scripts/cucumber.zip.git
+	ignore = dirty
 [submodule ".vim/bundle/Align"]
 	path = .vim/bundle/Align
 	url = https://github.com/vim-scripts/Align.git
+	ignore = dirty
 [submodule ".vim/bundle/vividchalk"]
 	path = .vim/bundle/vividchalk
 	url = https://github.com/vim-scripts/vividchalk.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/Markdown-syntax"]
 	path = .vim/bundle/Markdown-syntax
 	url = https://github.com/vim-scripts/Markdown-syntax.git
+	ignore = dirty
 [submodule ".vim/bundle/tango"]
 	path = .vim/bundle/tango
 	url = https://github.com/vim-scripts/tango.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/darktango"]
 	path = .vim/bundle/darktango
 	url = https://github.com/vim-scripts/darktango.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/tango-desert"]
 	path = .vim/bundle/tango-desert
 	url = https://github.com/vim-scripts/tango-desert.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/twilight"]
 	path = .vim/bundle/twilight
 	url = https://github.com/vim-scripts/twilight.git
+	ignore = dirty
 [submodule ".vim/bundle/Mustang2"]
 	path = .vim/bundle/Mustang2
 	url = https://github.com/vim-scripts/Mustang2.git
+	ignore = dirty
 [submodule ".vim/bundle/blackboard"]
 	path = .vim/bundle/blackboard
 	url = https://github.com/vim-scripts/blackboard.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/elisex"]
 	path = .vim/bundle/elisex
 	url = https://github.com/vim-scripts/elisex.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/xoria256"]
 	path = .vim/bundle/xoria256
 	url = https://github.com/vim-scripts/xoria256.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/tir_black"]
 	path = .vim/bundle/tir_black
 	url = https://github.com/vim-scripts/tir_black.git
+	ignore = dirty
 [submodule ".vim/bundle/pathogen"]
 	path = .vim/bundle/pathogen
 	url = https://github.com/vim-scripts/pathogen.vim.git
+	ignore = dirty
