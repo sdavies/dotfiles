@@ -11,6 +11,7 @@ set hlsearch
 set nocp
 set t_Co=256
 filetype plugin indent on
+source ~/.vim/db
 set spell spelllang=en_us
 set nospell
 set autowrite
