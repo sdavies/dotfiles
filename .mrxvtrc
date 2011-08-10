@@ -1,0 +1,97 @@
+
+Mrxvt.geometry:		    160x50
+
+#
+# -----------------------------	TAB-BAR OPTIONS ------------------------------ #
+#
+
+Mrxvt.autohideTabbar:		False
+Mrxvt.minVisibleTabs:		5
+Mrxvt.maxTabWidth:		17
+Mrxvt.syncTabTitle:		True
+Mrxvt.highlightTabOnBell:	True
+Mrxvt.itabBackground:		#101010
+Mrxvt.tabBackground:		#000000
+Mrxvt.itabForeground:		#909090
+Mrxvt.tabForeground:		#9a9a9a
+Mrxvt.bottomTabbar:		False
+Mrxvt.titleFormat:		%n. %t
+Mrxvt.termName:		    xterm
+Mrxvt.tabTitle:			mrxvt
+
+
+#
+# ---------------------- SCROLLING / SCROLLBAR OPTIONS ----------------------- #
+#
+
+Mrxvt.scrollbarRight:		True
+Mrxvt.scrollbarStyle:		rxvt
+Mrxvt.saveLines:		2000
+Mrxvt.scrollTtyOutputInhibit:	True
+Mrxvt.scrollTtyKeypress:	True
+Mrxvt.scrollColor:		#808080
+Mrxvt.troughColor:		#202020
+
+#
+# ---------------------------------- FONTS ----------------------------------- #
+#
+Mrxvt.xft:			1
+Mrxvt.xftFont:			Liberation Mono
+Mrxvt.xftSize:			10
+Mrxvt.xftAntialias:		1
+
+#
+# ---------------------------------- COLORS ---------------------------------- #
+#
+
+# Setup colors for a black background.
+Mrxvt.background:		#000000
+Mrxvt.foreground:		#EFEFEF
+
+#
+# ------------------------------- MISC OPTIONS ------------------------------- #
+#
+
+# Border to leave around terminal text
+Mrxvt.internalBorder:		2
+
+# Make double click select whole URL's
+Mrxvt.cutChars:			:=/~#@?%&_-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0abcdefghijklmnopqrstuvwxyz
+
+# Blank the mouse pointer on keystrokes or after 10 seconds of inactivity.
+#Mrxvt.pointerBlank:		True
+#Mrxvt.pointerBlankDelay:	3
+
+# Don't close the tab if the secondary screen is displayed (e.g. when running
+# vim).
+Mrxvt.protectSecondary:		True
+
+# Run as a login shell.
+# Mrxvt.loginShell:		True
+
+# Enable session management
+Mrxvt.sessionMgt:		True
+Mrxvt.showMenu:			False
+
+# Tango Color Scheme
+Mrxvt.color0:	#2E3436
+Mrxvt.color1:	#CC0000
+Mrxvt.color2:	#4E9A06
+Mrxvt.color3:	#C4A000
+Mrxvt.color4:	#3465A4
+Mrxvt.color5:	#75507B
+Mrxvt.color6:	#06989A
+Mrxvt.color7:	#D3D7CF
+
+Mrxvt.color8:	#555753
+Mrxvt.color9:	#EF2929
+Mrxvt.color10:	#8AE234
+Mrxvt.color11:	#FCE94F
+Mrxvt.color12:	#729FCF
+Mrxvt.color13:	#AD7FA8
+Mrxvt.color14:	#34E2E2
+Mrxvt.color15:	#EEEEEC
+
+# ------------------------------- MACROS  ------------------------------- #
+Mrxvt.macro.Home:             Str \eOH
+Mrxvt.macro.KP_Home:             Str \eOH
