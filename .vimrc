@@ -2,7 +2,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 set guifont=Liberation\ Mono\ 12
 set nowrap
-set visualbell 
+set visualbell
 set tabstop=4
 set shiftwidth=4
 set ignorecase
@@ -45,3 +45,31 @@ nmap __gf <Esc>:tabe %:p:h/<C-R><C-F>.php<CR>
 
 " clean formatting for css
 map <F9> :%s/\n\+\s*//g<CR>:%s/:[ ]*/:/g<CR>:%s/}/}\r\r/g<CR>:%s/;/;\r\t/g<CR>:%s/[ ]*{/ {\r\t/g<CR>:%s/\(\t\)\?\/\*\(.*\)\*\//\1\/\*\r\1\2\r\1\*\/\r\1/ge<CR>:%s/\(\t\)\?\/\*/\1\/\*\r\1/ge<CR>:%s/\(\n\+\)\?\(\t\)\?\*\//\r\2\*\/\r\2\1\2/ge<CR>:%s/^\t}/}/g<CR>:%s/\t\([^:]\+\):/\t\1: /g<CR>:%s/[ ]*!important/ !important/ge<CR>:%s/\t\n//ge<CR>:%s/\n\{3,\}/\r\r/ge<CR>:%s/\(\n^$\)\{2,\}//ge<CR>:let err=0<CR>:while err == 0<CR>try<CR> %s/^\([^,\t]\+\),\([^$ ]\)/\1,\r\2/g<CR>catch /^Vim\%((\a\+)\)\=:E/<CR>endtry<CR>:endwhile<CR>
+
+function! Preserve(command)
+	"Preparation: save last search, and cursor position.
+	let _s=@/
+	let l = line(".")
+	let c = col(".")
+	"Do the business:
+	execute a:command
+	"Clean up: restore previous search history, and cursor position
+	let @/=_s
+	call cursor(l, c)
+endfunction
+
+function! KillWhitey()
+	"Double blank lines
+	"call Preserve("%s/\n\{3,}/\r\r/e %s/\\s\\+$//e")
+	"Whitespace
+	call Preserve("%s/\\s\\+$//e")
+endfunction
+
+function! IndentFile()
+	call Preserve("normal gg=G")
+endfunction
+
+nmap __$ :call KillWhitey()<CR>
+nmap __= :call IndentFile()<CR>
+
+autocmd BufWritePre * :call KillWhitey()
