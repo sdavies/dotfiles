@@ -8,3 +8,4 @@ do
 		ln -s $_DOTFILES/$i ~/$i
 	fi
 done
+ln -s $_DOTFILES/.gitconfig ~/.gitconfig
