@@ -10,6 +10,8 @@ set noexpandtab
 set hlsearch
 set nocp
 set t_Co=256
+set bdir=~/tmp,~/,.
+set dir=~/tmp,/tmp,/var/tmp/,~/,.
 filetype plugin indent on
 source ~/.vim/db
 set spell spelllang=en_us

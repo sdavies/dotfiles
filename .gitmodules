@@ -108,3 +108,12 @@
 [submodule ".vim/bundle/Markdown"]
 	path = .vim/bundle/Markdown
 	url = git://github.com/vim-scripts/Markdown.git
+[submodule ".vim/bundle/The-NERD-tree"]
+	path = .vim/bundle/The-NERD-tree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule ".vim/bundle/Markdown"]
+	path = .vim/bundle/Markdown
+	url = git://github.com/vim-scripts/Markdown.git
+[submodule ".vim/bundle/vim-json-bundle"]
+	path = .vim/bundle/vim-json-bundle
+	url = git://github.com/vim-scripts/vim-json-bundle.git
