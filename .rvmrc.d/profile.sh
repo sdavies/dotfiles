@@ -1,9 +1,9 @@
 # set vars for convienence
 _APPDIR=$(dirname $rvm_current_rvmrc 2> /dev/null)
-_VIM=$(which vim)
-_GVIM=$(which gvim)
-_SED=$(which sed)
-_GREP=$(which grep)
+_VIM=$(which vim --skip-alias)
+_GVIM=$(which gvim --skip-alias)
+_SED=$(which sed --skip-alias)
+_GREP=$(which grep --skip-alias)
 
 # vimify [vim|gvim] 123445:12
 # vimify [vim|gvim] 123445
@@ -67,13 +67,13 @@ function vimify() {
 }
 
 # usage: see vimify
-# alias for vimify vim 
+# alias for vimify vim
 function v() {
 	vimify vim $@
 }
 
 # usage: see vimify
-# alias for vimify gvim 
+# alias for vimify gvim
 function g() {
 	vimify gvim $@
 }

@@ -17,13 +17,16 @@ source ~/.vim/db
 set spell spelllang=en_us
 set nospell
 set autowrite
+set background=dark
 if has ("gui_running")
-	colorscheme ir_black
+	colorscheme solarized
 	"colorscheme mustang
 	"colorscheme adaryn
 	"colorscheme 256adaryn
 else
+	set background=dark
 	colorscheme ir_black
+	"colorscheme solarized
 	"colorscheme mustang
 	"colorscheme adaryn
 	"colorscheme 256adaryn

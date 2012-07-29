@@ -35,3 +35,7 @@
 	editor = vim
 [merge]
 	tool = meld
+
+[alias]
+	meld = /bin/git-meld
+

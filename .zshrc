@@ -1,5 +1,7 @@
 # Set up the prompt
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 autoload -Uz promptinit
 promptinit
 prompt adam1

@@ -111,9 +111,16 @@
 [submodule ".vim/bundle/The-NERD-tree"]
 	path = .vim/bundle/The-NERD-tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
+	ignore = dirty
 [submodule ".vim/bundle/Markdown"]
 	path = .vim/bundle/Markdown
 	url = git://github.com/vim-scripts/Markdown.git
+	ignore = dirty
 [submodule ".vim/bundle/vim-json-bundle"]
 	path = .vim/bundle/vim-json-bundle
 	url = git://github.com/vim-scripts/vim-json-bundle.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
