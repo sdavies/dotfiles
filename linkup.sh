@@ -1,7 +1,7 @@
 #!/bin/bash
 # link dotfiles
 _DOTFILES=$(pwd)
-_GREP=$(which grep)
+_GREP=$(which grep --skip-alias)
 for i in .[a-zA-Z]*
 do
 	if (echo $i | $_GREP -qv "^.git"); then

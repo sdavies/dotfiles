@@ -1,5 +1,7 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+Helptags
 set guifont=Liberation\ Mono\ 12
 set nowrap
 set visualbell

@@ -32,5 +32,26 @@ git-top(){
 	fi
 }
 
+# Terminals with any of the following set, support 256 colors (and are local)
+local256="$COLORTERM$XTERM_VERSION$ROXTERM_ID$KONSOLE_DBUS_SESSION"
+
+if [ -n "$local256" ] || [ -n "$SEND_256_COLORS_TO_REMOTE" ]; then
+  case "$TERM" in
+    'xterm') TERM=xterm-256color;;
+    'screen') TERM=screen-256color;;
+    'Eterm') TERM=Eterm-256color;;
+  esac
+  export TERM
+
+  if [ -n "$TERMCAP" ] && [ "$TERM" = "screen-256color" ]; then
+    TERMCAP=$(echo "$TERMCAP" | sed -e 's/Co#8/Co#256/g')
+    export TERMCAP
+  fi
+fi
+
+unset local256
+
+
 alias whatismyip='curl ip.appspot.com'
-alias gpw="apg -n20 -m20 -MNCLS -p7 -a1 -E \\\/\\\`\>\<\\\"\'\\\\ -b ~/bloomfile -r /usr/share/dict/words"
+#alias gpw="apg -n20 -m20 -MNCLS -p7 -a1 -E \\\/\\\`\>\<\\\"\'\\\\ -b ~/bloomfile -r /usr/share/dict/words"
+alias gpw="apg -n20 -m20 -MNCLS -p7 -a1 -E \\\/\\\`\>\<\\\"\'\\\\ -r /usr/share/dict/words"
