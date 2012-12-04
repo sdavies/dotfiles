@@ -18,10 +18,6 @@
 	path = .vim/bundle/multvals
 	url = https://github.com/vim-scripts/multvals.vim.git
 	ignore = dirty
-[submodule ".vim/bundle/rails"]
-	path = .vim/bundle/rails
-	url = https://github.com/vim-scripts/rails.vim.git
-	ignore = dirty
 [submodule ".vim/bundle/SQLUtillities"]
 	path = .vim/bundle/SQLUtillities
 	url = https://github.com/vim-scripts/SQLUtilities.git
