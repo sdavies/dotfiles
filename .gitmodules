@@ -101,6 +101,7 @@
 [submodule ".vim/bundle/The-NERD-tree"]
 	path = .vim/bundle/The-NERD-tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
+	ignore = dirty
 [submodule ".vim/bundle/Markdown"]
 	path = .vim/bundle/Markdown
 	url = git://github.com/vim-scripts/Markdown.git
@@ -116,3 +117,4 @@
 [submodule ".vim/bundle/rails"]
 	path = .vim/bundle/rails
 	url = https://github.com/tpope/vim-rails.git
+	ignore = dirty
