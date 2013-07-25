@@ -1,20 +1,57 @@
-call pathogen#infect()
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'majutsushi/tagbar'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+" vim-scripts repos
+Bundle 'Markdown'
+Bundle 'The-NERD-tree'
+Bundle 'vim-json-bundle'
+Bundle 'Align'
+Bundle 'blackboard.vim'
+Bundle 'cucumber.zip'
+Bundle 'darktango.vim'
+Bundle 'dbext.vim'
+Bundle 'debugger.py'
+Bundle 'elisex.vim'
+Bundle 'genutils'
+Bundle 'Gundo'
+Bundle 'Markdown-syntax'
+Bundle 'matchit.zip'
+Bundle 'multvals.vim'
+Bundle 'Mustang2'
+Bundle 'SQLUtilities'
+Bundle 'surround.vim'
+Bundle 'tango-desert.vim'
+Bundle 'tango.vim'
+Bundle 'tir_black'
+Bundle 'twilight'
+Bundle 'vividchalk.vim'
+Bundle 'xoria256.vim'
+
 syntax on
 filetype plugin indent on
-Helptags
+"Helptags
 set guifont=Liberation\ Mono\ 12
 set nowrap
 set visualbell
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set ignorecase
-set noexpandtab
+set expandtab
 set hlsearch
 set nocp
 set t_Co=256
 set bdir=~/tmp,~/,.
 set dir=~/tmp,/tmp,/var/tmp/,~/,.
-filetype plugin indent on
 source ~/.vim/db
 set spell spelllang=en_us
 set nospell
