@@ -36,10 +36,10 @@ Bundle 'tir_black'
 Bundle 'twilight'
 Bundle 'vividchalk.vim'
 Bundle 'xoria256.vim'
+"Helptags
 
 syntax on
 filetype plugin indent on
-"Helptags
 set guifont=Liberation\ Mono\ 12
 set nowrap
 set visualbell

@@ -4,3 +4,4 @@
 .ssh/backup
 .ssh/config
 .vim/.netrwhist
+.vim/bundle
