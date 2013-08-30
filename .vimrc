@@ -11,6 +11,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
+Bundle 'bogado/file-line'
 " vim-scripts repos
 Bundle 'Markdown'
 Bundle 'The-NERD-tree'
@@ -24,6 +25,7 @@ Bundle 'debugger.py'
 Bundle 'elisex.vim'
 Bundle 'genutils'
 Bundle 'Gundo'
+Bundle 'git-time-lapse'
 Bundle 'Markdown-syntax'
 Bundle 'matchit.zip'
 Bundle 'multvals.vim'
@@ -36,6 +38,7 @@ Bundle 'tir_black'
 Bundle 'twilight'
 Bundle 'vividchalk.vim'
 Bundle 'xoria256.vim'
+Bundle 'darktango.vim'
 "Helptags
 
 syntax on
@@ -116,5 +119,6 @@ endfunction
 
 nmap __$ :call KillWhitey()<CR>
 nmap __= :call IndentFile()<CR>
+nmap __t :call TimeLapse() <CR>
 
 autocmd BufWritePre * :call KillWhitey()

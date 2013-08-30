@@ -39,3 +39,5 @@
 [alias]
 	meld = /bin/git-meld
 
+[push]
+	default = simple

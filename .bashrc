@@ -42,5 +42,12 @@ alias guard="bundle exec guard"
 alias knife="bundle exec knife"
 alias cucumber="bundle exec cucumber"
 
+#heroku
+export PATH="/usr/local/heroku/bin:$PATH"
+#rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+set -o vi
+
+export CHROME_DEVEL_SANDBOX=~/chrome-linux/chrome_sandbox
