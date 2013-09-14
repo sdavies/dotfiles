@@ -4,3 +4,6 @@
 [submodule ".rbenv"]
 	path = .rbenv
 	url = git://github.com/sstephenson/rbenv.git
+[submodule ".bungler"]
+	path = .bungler
+	url = https://github.com/ahawthorne/bungler.git
