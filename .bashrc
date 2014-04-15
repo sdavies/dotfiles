@@ -47,13 +47,7 @@ set -o vi
 export CHROME_DEVEL_SANDBOX=~/chrome-linux/chrome_sandbox
 export WH=~/Documents/work/
 
-export BUNGLER="rails rake rspec cucumber specjour pickler guard knife"
-[[ -s "$HOME/.bungler/bungler" ]] && . $HOME/.bungler/bungler
-#replaced by bungler  alias rails="bundle exec rails"
-#replaced by bungler  alias specjour="bundle exec specjour"
-#replaced by bungler  alias rspec="bundle exec rspec"
-#replaced by bungler  alias rake="bundle exec rake"
-#replaced by bungler  alias pickler="bundle exec pickler"
-#replaced by bungler  alias guard="bundle exec guard"
-#replaced by bungler  alias knife="bundle exec knife"
-#replaced by bungler  alias cucumber="bundle exec cucumber"
+
+[[ -s "$HOME/bin/marks.sh" ]] && . $HOME/bin/marks.sh
+#export BUNGLER="rails rake rspec cucumber specjour pickler guard knife"
+#[[ -s "$HOME/.bungler/bungler" ]] && . $HOME/.bungler/bungler

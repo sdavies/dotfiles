@@ -1,45 +1,6 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'majutsushi/tagbar'
-Bundle 'msanders/snipmate.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'bogado/file-line'
-" vim-scripts repos
-Bundle 'Markdown'
-Bundle 'The-NERD-tree'
-Bundle 'vim-json-bundle'
-Bundle 'Align'
-Bundle 'blackboard.vim'
-Bundle 'cucumber.zip'
-Bundle 'darktango.vim'
-Bundle 'dbext.vim'
-Bundle 'debugger.py'
-Bundle 'elisex.vim'
-Bundle 'genutils'
-Bundle 'Gundo'
-Bundle 'git-time-lapse'
-Bundle 'Markdown-syntax'
-Bundle 'matchit.zip'
-Bundle 'multvals.vim'
-Bundle 'Mustang2'
-Bundle 'SQLUtilities'
-Bundle 'surround.vim'
-Bundle 'tango-desert.vim'
-Bundle 'tango.vim'
-Bundle 'tir_black'
-Bundle 'twilight'
-Bundle 'vividchalk.vim'
-Bundle 'xoria256.vim'
-Bundle 'darktango.vim'
-"Helptags
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 syntax on
 filetype plugin indent on
@@ -120,5 +81,11 @@ endfunction
 nmap __$ :call KillWhitey()<CR>
 nmap __= :call IndentFile()<CR>
 nmap __t :call TimeLapse() <CR>
+"snake case
+nmap __s :s#\C\(\<\u[a-z0-9]\+\\|[a-z0-9]\+\)\(\u\)#\l\1_\l\2#g<CR>
+"camel case
+nmap __c :s#\(\%(\<\l\+\)\%(_\)\@=\)\\|_\(\l\)#\u\1\2#g<CR>
 
 autocmd BufWritePre * :call KillWhitey()
+
+command Sudow w !sudo tee % >/dev/null

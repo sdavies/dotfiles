@@ -37,7 +37,7 @@
 	tool = meld
 
 [alias]
-	meld = /bin/git-meld
+	meld = /usr/local/bin/git-meld.pl
 
 [push]
 	default = simple
