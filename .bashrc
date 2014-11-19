@@ -21,7 +21,7 @@ export PGCLIENTENCODING=UTF8
 #PGSERVICE
 #PGSYSCONFDIR
 
-export OPSCODE_USER=shanedavies
+export OPSCODE_USER=sdavies
 
 git-top(){
 	top=$(git rev-parse --show-toplevel)
@@ -49,5 +49,8 @@ export WH=~/Documents/work/
 
 
 [[ -s "$HOME/bin/marks.sh" ]] && . $HOME/bin/marks.sh
-#export BUNGLER="rails rake rspec cucumber specjour pickler guard knife"
-#[[ -s "$HOME/.bungler/bungler" ]] && . $HOME/.bungler/bungler
+export BUNGLER="rails rake rspec cucumber specjour pickler guard knife"
+[[ -s "$HOME/.bungler/bungler" ]] && . $HOME/.bungler/bungler
+
+GIT_PROMPT_ONLY_IN_REPO=1
+source ~/.bash-git-prompt/gitprompt.sh
