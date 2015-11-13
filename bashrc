@@ -48,16 +48,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias whatismyip='curl ip.appspot.com'
-alias git-untracked="git ls-files --other --exclude-standard"
-alias git-ignored="git ls-files --ignored --exclude-standard --others"
 alias npm-exec='PATH=$(npm bin):$PATH'
-
-git-top(){
-top=$(git rev-parse --show-toplevel)
-  if [ 0 -eq $? ]; then
-    cd $top
-  fi
-}
+alias git-top='cd $(git topdir)'
 
 function dockerip(){
   docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${1}

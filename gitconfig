@@ -28,6 +28,9 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
+  ignored = ls-files --ignored --exclude-standard --others
+  untracked = ls-files --other --exclude-standard
+  topdir = rev-parse --show-toplevel
 [core]
 	editor = vim
 [merge]
