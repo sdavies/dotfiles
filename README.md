@@ -8,7 +8,7 @@ Installation
 
 Follow instructions for installing rcm on their [homepage at](https://github.com/thoughtbot/rcm)
 
-    git clone https://github.com/thoughtbot/rcm.git ~/myplacefordotfiles
+    git clone https://github.com/sdavies/dotfiles.git ~/myplacefordotfiles
     echo "DOTFILES_DIRS=~/myplacefordotfiles" > ~/.rcrc
     rcup -v
     mkdir -p ~/.vim/bundle/
