@@ -1,7 +1,0 @@
-.vim/db
-.ssh/known_hosts
-.ssh/id_rsa
-.ssh/backup
-.ssh/config
-.vim/.netrwhist
-.vim/bundle

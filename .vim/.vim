@@ -1,1 +1,0 @@
-/home/shane/Documents/work/dotfiles/.vim
