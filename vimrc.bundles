@@ -1,0 +1,75 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/vundle'
+
+Plugin 'vim-coffee-script'
+Plugin 'mtscout6/vim-cjsx'
+Plugin 'majutsushi/tagbar'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-commentary'
+Plugin 'slim-template/vim-slim'
+Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'ngmy/vim-rubocop'
+"Plugin 'ngmy/vim-rubocop'
+"Plugin 'bogado/file-line'
+"Plugin 'Valloric/YouCompleteMe'
+
+" vim-scripts repos
+Plugin 'ag.vim'
+Plugin 'Align'
+Plugin 'bling/vim-airline'
+Plugin 'ctrlp.vim'
+Plugin 'cucumber.zip'
+Plugin 'dbext.vim'
+Plugin 'debugger.py'
+Plugin 'genutils'
+Plugin 'git-time-lapse'
+Plugin 'Gundo'
+Plugin 'Markdown'
+Plugin 'Markdown-syntax'
+Plugin 'matchit.zip'
+Plugin 'multvals.vim'
+Plugin 'SQLUtilities'
+Plugin 'syntastic'
+Plugin 'Tabular'
+Plugin 'The-NERD-tree'
+Plugin 'vim-json-bundle'
+Plugin 'christoomey/vim-tmux-navigator'
+
+"Color Schemes
+Plugin 'tir_black'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sickill/vim-monokai'
+"Plugin 'blackboard.vim'
+"Plugin 'darktango.vim'
+"Plugin 'elisex.vim'
+"Plugin 'Mustang2'
+"Plugin 'tango-desert.vim'
+"Plugin 'tango.vim'
+"Plugin 'twilight'
+"Plugin 'vividchalk.vim'
+"Plugin 'xoria256.vim'
+
+"Coldfusion
+"Plugin 'cf-utils'
+"Plugin 'cf.vim'
+"Plugin 'cflint/cflint-syntastic'
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call vundle#end()
+filetype on
