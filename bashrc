@@ -14,17 +14,13 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-export PATH="/usr/local/heroku/bin:$HOME/Android/Sdk/platform-tools:$HOME/.local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH:"
+export PATH="/usr/local/heroku/bin:$HOME/Android/Sdk/platform-tools:$HOME/.local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH:$HOME/android-studio/bin/:"
 eval "$(rbenv init -)"
 
-
-powerline-daemon -q
-powerline_path=$(python -c 'import pkgutil; print pkgutil.get_loader("powerline").filename' 2>/dev/null)
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-if [[ "$powerline_path" != "" ]]; then
-  source ${powerline_path}/bindings/bash/powerline.sh
-fi
+GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_THEME=Custom
+GIT_PROMPT_THEME_FILE=~/.git-prompt-colors.sh
+source ~/.bash-git-prompt/gitprompt.sh
 
 export QMAKE=/usr/bin/qmake-qt4
 
@@ -39,6 +35,7 @@ export PGSSLMODE=prefer
 export PGDATESTYLE=ISO
 export PGTZ=America/Vancouver
 export PGCLIENTENCODING=UTF8
+export HISTTIMEFORMAT="%y/%m/%d %T "
 
 # some more ls aliases
 #alias ll='ls -alF'
@@ -56,3 +53,15 @@ function dockerip(){
 }
 
 set -o vi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/sdavies/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/sdavies/google-cloud-sdk/completion.bash.inc'
+
+# added by travis gem
+[ -f /home/sdavies/.travis/travis.sh ] && source /home/sdavies/.travis/travis.sh

@@ -109,3 +109,9 @@ autocmd FileType gitcommit setlocal spell
 command Sudow w !sudo tee % >/dev/null
 
 let g:syntastic_ruby_checkers=['rubocop', 'mri']
+
+set tags=./tags;   " Search for tags upwards from the current file's directory.
+let g:easytags_dynamic_files = 1    " Also look for project-specific tags files.
+let g:easytags_async = 1
+let b:easytags_auto_highlight = 0
+nnoremap <leader>. :CtrlPTag<cr>
