@@ -26,3 +26,7 @@ Optionally setup rbenv
     rbenv install 2.2.3
     rbenv global 2.2.3
     rbenv rehash
+
+Optionally setup git-prompt
+---------------------------
+    git clone https://github.com/sstephenson/rbenv.git ~/.bash-git-prompt
