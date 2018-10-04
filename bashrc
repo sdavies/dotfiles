@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -112,6 +115,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# added by travis gem
+[ -f /home/sdavies/.travis/travis.sh ] && source /home/sdavies/.travis/travis.sh
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -122,7 +128,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.rbenv/bin:$PATH:"
 eval "$(rbenv init -)"
 
 GIT_PROMPT_ONLY_IN_REPO=1
@@ -149,3 +155,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/.google-cloud-sdk/path.bash.inc" ]; then . "$HOME/.google-cloud-sdk/path.bash.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/.google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/.google-cloud-sdk/completion.bash.inc"; fi
