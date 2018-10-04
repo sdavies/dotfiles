@@ -96,6 +96,7 @@ nmap __$ :call KillWhitey()<CR>
 nmap __= :call IndentFile()<CR>
 nmap __t :call TimeLapse() <CR>
 nmap __r :call ResetCFC() <CR>
+nmap __y :call yaml_path#show() <CR>
 "snake case
 nmap __s :s#\C\(\<\u[a-z0-9]\+\\|[a-z0-9]\+\)\(\u\)#\l\1_\l\2#g<CR>
 "camel case
@@ -107,11 +108,22 @@ autocmd FileType javascript,c,cpp,java,html,php,ruby autocmd BufWritePre * Strip
 autocmd FileType gitcommit setlocal spell
 
 command Sudow w !sudo tee % >/dev/null
+let g:ale_linters = { 'javascript': ['eslint'], 'jsx': ['eslint'] }
 
-let g:syntastic_ruby_checkers=['rubocop', 'mri']
+" let g:syntastic_ruby_checkers=['rubocop', 'mri']
+" let g:syntastic_check_on_open=1
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exe='npx eslint'
 
 set tags=./tags;   " Search for tags upwards from the current file's directory.
 let g:easytags_dynamic_files = 1    " Also look for project-specific tags files.
 let g:easytags_async = 1
 let b:easytags_auto_highlight = 0
 nnoremap <leader>. :CtrlPTag<cr>
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+
+let g:airline_theme='badwolf'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/](.git|.hg|.svn|.bundl|vendor|tmp|doc|log|node_modules)$'
